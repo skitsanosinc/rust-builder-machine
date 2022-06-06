@@ -10,7 +10,7 @@ docker run --rm -it -v "$(pwd)":/app skitsanos/rust-builder-machine cargo build 
 Or, to reuse the container:
 
 ```shell
-docker run --name rust-project --rm -it -v "$(pwd)":/app skitsanos/rust-builder-machine /root/.cargo/bin/cargo build --release
+docker run --name rust-project -it -v "$(pwd)":/app skitsanos/rust-builder-machine /root/.cargo/bin/cargo build --release
 ```
 
 For just in case, the Rust binaries can be found at `/root/.cargo/bin`
