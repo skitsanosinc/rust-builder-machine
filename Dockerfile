@@ -1,4 +1,4 @@
-FROM ubuntu:rolling as builder
+FROM ubuntu:22.04 as builder
 
 WORKDIR /app
 
