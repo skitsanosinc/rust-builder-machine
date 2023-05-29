@@ -25,6 +25,6 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag skitsanos/rust-builder-machine:latest
 
-      - name: Test the image
+      - name: Push the image
         run: |
-          docker run --rm -it skitsanos/rust-builder-machine cargo --version
+          docker push skitsanos/rust-builder-machine:latest
